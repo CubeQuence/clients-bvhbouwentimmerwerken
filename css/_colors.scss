@@ -1,0 +1,25 @@
+.color {
+    &-primary{
+        color: $color_primary !important;
+
+        &--background {
+            background-color: $color_primary !important;
+
+            &:hover:not(.nav-wrapper):not(.hover-disable) {
+                background-color: $color_primary_darken !important;
+            }
+        }
+    }
+
+    &-secondary{
+        color: $color_secondary !important;
+
+        &--background {
+            background-color: $color_secondary !important;
+
+            &:hover:not(.hover-disable) {
+                background-color: $color_secondary_darken !important;
+            }
+        }
+    }
+}

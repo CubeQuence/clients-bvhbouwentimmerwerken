@@ -1,0 +1,24 @@
+@import 'vars';
+@import 'colors';
+@import 'helper';
+@import 'forms';
+
+//Lettertype
+@font-face {
+    font-family: 'BankGothic';
+    src:
+        url('bankgothic.woff') format('woff'),
+        url('bankgothic.ttf')  format('truetype');
+}
+
+html {
+    font-family: BankGothic, Arial,helvetica,sans-serif !important;
+}
+
+//CSS for logo
+.nav-wrapper .brand-logo img {
+    border-radius: 10px;
+    margin: 1rem;
+    width: auto;
+    height: 2rem;
+}

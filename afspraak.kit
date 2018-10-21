@@ -1,0 +1,62 @@
+<!-- $pagetitle = Afspraak Maken || BVH Bouw en Timmerwerken -->
+<!-- $ma_afspraak_maken = active -->
+
+<!-- @import /includes/header -->
+
+<!-- @import /includes/navbar-->
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2 class="header">Afspraak Maken</h2>
+                <p>Vul AUB dit formulier in dan bellen wij u zo snel mogelijk om een afspraak te maken.</p>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="name" type="text">
+                        <label for="name">Naam</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="phone" type="tel">
+                        <label for="phone">Telefoon</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 l6">
+                        <input id="postalcode" type="text">
+                        <label for="postalcode">Postcode</label>
+                    </div>
+                    <div class="input-field col s12 l6">
+                        <input id="house" type="text">
+                        <label for="house">Huisnummer</label>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="problem" class="materialize-textarea"></textarea>
+                        <label for="problem">Omschrijving</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <button id="submit" class="btn-large waves-effect waves-light color-primary--background" type="submit" name="action">
+                        Verstuur formulier<i class="material-icons right">send</i>
+                    </button>
+                </div>
+                <script src="https://cdn.lucacastelnuovo.nl/js/ajax.js"></script>
+                <script src="/js/afspraak.js"></script>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- @import /includes/footer -->
