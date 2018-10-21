@@ -88,7 +88,7 @@
 		"oAP": "/build/css/bankgothic.woff",
 		"oF": 0
 		},
-	"/css/style.scss": {
+	"/css/style.2.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -96,7 +96,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/build/css/style.css",
+		"oAP": "/build/css/style.2.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
