@@ -20,7 +20,7 @@ $config = parse_ini_file('/var/www/bvhbouwentimmerwerken.nl/config.ini');
 //Send mail
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_POST, 1);
-curl_setopt($curl, CURLOPT_POSTFIELDS, ['to' => 'info@bvhbouwentimmerwerken.nl', 'from_name' => 'Contactformulier || BVH','subject' => 'Contactformulier || BVH', 'body' => $body, 'api_key' => $config['api_key']]);
+curl_setopt($curl, CURLOPT_POSTFIELDS, ['to' => 'bart.vanhaaren@hotmail.com', 'from_name' => 'Contactformulier || BVH','subject' => 'Contactformulier || BVH', 'body' => $body, 'api_key' => $config['api_key']]);
 curl_setopt($curl, CURLOPT_URL, "https://api.lucacastelnuovo.nl/mail/");
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 $result = curl_exec($curl);
