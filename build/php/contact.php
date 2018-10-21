@@ -7,7 +7,7 @@ $email_address = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
 if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message']) || !$email_address) {
     header('HTTP/1.1 400 Bad Request');
     header('Content-Type: application/json; charset=UTF-8');
-    die(json_encode(array('message' => 'Vul AUB alle velden in')));
+    die(json_encode(array('message' => 'Vul AUB alle velden correct in')));
 }
 
 //Format body
