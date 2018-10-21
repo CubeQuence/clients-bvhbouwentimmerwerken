@@ -119,6 +119,17 @@
 		"oT": 1,
 		"q": 90
 		},
+	"/images/facebook.png": {
+		"ft": 32768,
+		"iS": 3859,
+		"oA": 0,
+		"oAP": "/build/images/facebook.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 90
+		},
 	"/images/header.jpg": {
 		"ft": 16384,
 		"iS": 255674,
