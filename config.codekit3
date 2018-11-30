@@ -278,16 +278,6 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/js/contact.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/build/js/contact.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
 	"/js/form-handler.js": {
 		"ft": 64,
 		"ma": 0,
