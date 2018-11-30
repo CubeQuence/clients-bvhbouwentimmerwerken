@@ -268,16 +268,6 @@
 		"oAP": "/build/index.html",
 		"oF": 0
 		},
-	"/js/afspraak.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/build/js/afspraak.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
 	"/js/form-handler.js": {
 		"ft": 64,
 		"ma": 0,
@@ -311,13 +301,6 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "/build/onderhoud-renovatie.html",
-		"oF": 0
-		},
-	"/php/afspraak.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/build/php/afspraak.php",
 		"oF": 0
 		},
 	"/README.md": {
@@ -356,7 +339,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 565308909.08328998
+	"lastBuiltDate": 565309301.99443495
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

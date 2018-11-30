@@ -11,48 +11,52 @@
             <div class="col s12">
                 <h2 class="header">Afspraak Maken</h2>
                 <p>Vul AUB dit formulier in dan bellen wij u zo snel mogelijk om een afspraak te maken.</p>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="name" type="text">
-                        <label for="name">Naam</label>
+                <form class="" action="index.html" method="post">
+                    <div id="thankyou_message" style="display:none;">
+                        <h4>Uw bericht is verstuurd!</h4>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="email" type="email">
-                        <label for="email">Email</label>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="name" type="text" name="name">
+                            <label for="name">Naam</label>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="phone" type="tel">
-                        <label for="phone">Telefoon</label>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" name="email">
+                            <label for="email">Email</label>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12 l6">
-                        <input id="postalcode" type="text">
-                        <label for="postalcode">Postcode</label>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="phone" type="tel" name="phone">
+                            <label for="phone">Telefoon</label>
+                        </div>
                     </div>
-                    <div class="input-field col s12 l6">
-                        <input id="house" type="text">
-                        <label for="house">Huisnummer</label>
+                    <div class="row">
+                        <div class="input-field col s12 l6">
+                            <input id="postalcode" type="text" name="postalcode">
+                            <label for="postalcode">Postcode</label>
+                        </div>
+                        <div class="input-field col s12 l6">
+                            <input id="house" type="text" name="house">
+                            <label for="house">Huisnummer</label>
+                        </div>
                     </div>
-                </div>
-                <br />
-                <div class="row">
-                    <div class="input-field col s12">
-                        <textarea id="problem" class="materialize-textarea"></textarea>
-                        <label for="problem">Omschrijving</label>
+                    <br />
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="problem" class="materialize-textarea" name="description"></textarea>
+                            <label for="problem">Omschrijving</label>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <button id="submit" class="btn-large waves-effect waves-light color-primary--background" type="submit" name="action">
-                        Verstuur<i class="material-icons right">send</i>
-                    </button>
-                </div>
-                <script src="https://cdn.lucacastelnuovo.nl/js/ajax.js"></script>
-                <script src="/js/afspraak.js"></script>
+                    <div class="row">
+                        <button class="btn-large waves-effect waves-light color-primary--background">
+                            Verstuur<i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                    <script data-cfasync="false" type="text/javascript" src="/js/form-handler.js"></script>
+                </form>
             </div>
         </div>
     </div>
