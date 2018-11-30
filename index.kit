@@ -30,29 +30,34 @@
         <div class="row">
             <div class="col s12">
                 <h4>Contact formulier</h4>
-                <div class="row">
-                    <div class="input-field col s12 l6">
-                        <input id="name" type="text">
-                        <label for="name">Naam</label>
+                <form class="gform" method="post" action="https://script.google.com/macros/s/AKfycbwE_vZZwa0AnU6FNsyY41l4iUEh9Skdo_kmLNw4VaTsuHYwwOxu/exec">
+                    <div class="row">
+                        <div id="thankyou_message" style="display:none;">
+                            <h4>Uw bericht is verstuurd!</h4>
+                        </div>
+                        <div class="input-field col s12 l6">
+                            <input id="name" type="text">
+                            <label for="name">Naam</label>
+                        </div>
+                        <div class="input-field col s12 l6">
+                            <input id="email" type="email">
+                            <label for="email">Email</label>
+                        </div>
                     </div>
-                    <div class="input-field col s12 l6">
-                        <input id="email" type="email">
-                        <label for="email">Email</label>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="message" class="materialize-textarea" rows="20"></textarea>
+                            <label for="message">Bericht</label>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <textarea id="message" class="materialize-textarea" rows="20"></textarea>
-                        <label for="message">Bericht</label>
+                    <div class="row">
+                        <input id="honeypot" type="text" name="honeypot" value="" />
+                        <button id="submit" class="btn waves-effect waves-light color-primary--background" type="submit" name="action">
+                            Verstuur<i class="material-icons right">send</i>
+                        </button>
                     </div>
-                </div>
-                <div class="row">
-                    <button id="submit" class="btn waves-effect waves-light color-primary--background" type="submit" name="action">
-                        Verstuur<i class="material-icons right">send</i>
-                    </button>
-                </div>
-                <script src="https://cdn.lucacastelnuovo.nl/js/ajax.js"></script>
-                <script src="/js/contact.js"></script>
+                    <script data-cfasync="false" type="text/javascript" src="/js/form-handler.js"></script>
+                </form>
             </div>
         </div>
     </div>

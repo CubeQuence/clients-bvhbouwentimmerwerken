@@ -7,7 +7,7 @@
 		"uuidString": "1F3C64AB-1AF8-4AE4-8228-EF3B81DA97A3"
 		}
 	],
-"creatorBuild": "28901",
+"creatorBuild": "28905",
 "files": {
 	"/afspraak.kit": {
 		"cB": 0,
@@ -288,6 +288,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/js/form-handler.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/build/js/form-handler.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/js/init.js": {
 		"ft": 64,
 		"ma": 0,
@@ -363,7 +373,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 562001050.215487
+	"lastBuiltDate": 565307382.07708704
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
