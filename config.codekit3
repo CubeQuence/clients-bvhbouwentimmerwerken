@@ -320,13 +320,6 @@
 		"oAP": "/build/php/afspraak.php",
 		"oF": 0
 		},
-	"/php/contact.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/build/php/contact.php",
-		"oF": 0
-		},
 	"/README.md": {
 		"cB": 0,
 		"cS": 0,

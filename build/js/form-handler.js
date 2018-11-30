@@ -15,7 +15,7 @@ return console.log("Robot Detected!"),!0;console.log("Welcome Human!")}// get al
 return!1;if(s.email&&(o=s.email,!/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i.test(o))){
 // if email is not valid show error
 var i=r.querySelector(".email-invalid");if(i)return!(i.style.display="block")}else{!function(e){for(var t=e.querySelectorAll("button"),n=0;n<t.length;n++)t[n].disabled=!0}(r);var c=r.action,u=new XMLHttpRequest;u.open("POST",c),// xhr.withCredentials = true;
-u.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),u.onreadystatechange=function(){console.log(u.status,u.statusText),console.log(u.responseText);var e=r.querySelector(".form-elements");e&&(e.style.display="none");var t=r.querySelector(".thankyou_message");t&&(t.style.display="block")};// url encode form data for sending as post data
+u.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),u.onreadystatechange=function(){console.log(u.status,u.statusText),console.log(u.responseText);var e=r.querySelector(".form-elements");e&&(e.style.display="none");var t=r.querySelector("#thankyou_message");t&&(t.style.display="block")};// url encode form data for sending as post data
 var d=Object.keys(s).map(function(e){return encodeURIComponent(e)+"="+encodeURIComponent(s[e])}).join("&");u.send(d)}}document.addEventListener("DOMContentLoaded",function(){console.log("Contact form submission handler loaded successfully.");for(// bind to the submit event of our form
 var e=document.querySelectorAll("form.gform"),t=0;t<e.length;t++)e[t].addEventListener("submit",n,!1)},!1)}();
 //# sourceMappingURL=form-handler.js.map
