@@ -11,10 +11,7 @@
             <div class="col s12">
                 <h2 class="header">Afspraak Maken</h2>
                 <p>Vul AUB dit formulier in dan bellen wij u zo snel mogelijk om een afspraak te maken.</p>
-                <form class="gform" action="https://script.google.com/macros/s/AKfycbyv4Qm-OSztRU49_f5fGKD0tKDfbApBTsCS-cHDRVEqf0g8xMkg/exec" method="post">
-                    <div id="thankyou_message" style="display:none;" class="col s12">
-                        <h6 class="btn-small disabled">Uw bericht is verstuurd!</h6>
-                    </div>
+                <form action="/posts/actions" method="POST" onsubmit="event.preventDefault(); contact_form(this);">
                     <div class="row">
                         <div class="input-field col s12">
                             <input id="name" type="text" name="name">
@@ -51,11 +48,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <button class="btn-large waves-effect waves-light color-primary--background">
+                        <button id="appointment-submit" class="btn-large waves-effect waves-light color-primary--background">
                             Verstuur<i class="material-icons right">send</i>
                         </button>
                     </div>
-                    <script data-cfasync="false" type="text/javascript" src="/js/form-handler.js"></script>
                 </form>
             </div>
         </div>

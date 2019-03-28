@@ -30,11 +30,8 @@
         <div class="row">
             <div class="col s12">
                 <h4>Contact formulier</h4>
-                <form class="gform" method="post" action="https://script.google.com/macros/s/AKfycbwE_vZZwa0AnU6FNsyY41l4iUEh9Skdo_kmLNw4VaTsuHYwwOxu/exec">
+                <form action="/posts/actions" method="POST" onsubmit="event.preventDefault(); contact_form(this);">
                     <div class="row">
-                        <div id="thankyou_message" style="display:none;" class="col s12">
-                            <h6 class="btn-small disabled">Uw bericht is verstuurd!</h6>
-                        </div>
                         <div class="input-field col s12 l6">
                             <input id="name" type="text" name="name">
                             <label for="name">Naam</label>
@@ -51,13 +48,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <input id="honeypot" type="text" name="honeypot" value="" />
-                        <button class="btn waves-effect waves-light color-primary--background">
+                        <button id="contact-submit" class="btn waves-effect waves-light color-primary--background">
                             Verstuur<i class="material-icons right">send</i>
                         </button>
                     </div>
-                    <script data-cfasync="false" type="text/javascript" src="/js/form-handler.js"></script>
-                </form>
+                    </form>
             </div>
         </div>
     </div>
