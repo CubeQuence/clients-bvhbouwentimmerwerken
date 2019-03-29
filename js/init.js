@@ -75,14 +75,10 @@ const contact_form = formElement => {
   FORMrequest("/mail.php", formData, response => {
     console.log(response);
     if (response.success) {
-      M.toast({
-        html: "Uw bericht is verstuurd!"
-      });
+      alert("Uw bericht is verstuurd!");
       document.querySelector("#form").reset();
     } else {
-      M.toast({
-        html: "Oeps, er ging iets mis!"
-      });
+      alert("Oeps, er ging iets mis!");
     }
   });
 };
