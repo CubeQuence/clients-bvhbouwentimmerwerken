@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col s12">
                 <h4>Contact formulier</h4>
-                <form action="/posts/actions" method="POST" onsubmit="event.preventDefault(); contact_form(this);">
+                <form id="form" action="/mail.php" method="POST" onsubmit="event.preventDefault(); contact_form(this);">
                     <div class="row">
                         <div class="input-field col s12 l6">
                             <input id="name" type="text" name="name">
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <button id="contact-submit" class="btn waves-effect waves-light color-primary--background">
+                        <button class="btn waves-effect waves-light color-primary--background">
                             Verstuur<i class="material-icons right">send</i>
                         </button>
                     </div>

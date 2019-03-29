@@ -11,7 +11,7 @@
             <div class="col s12">
                 <h2 class="header">Afspraak Maken</h2>
                 <p>Vul AUB dit formulier in dan bellen wij u zo snel mogelijk om een afspraak te maken.</p>
-                <form action="/posts/actions" method="POST" onsubmit="event.preventDefault(); contact_form(this);">
+                <form id="form" action="/mail.php" method="POST" onsubmit="event.preventDefault(); contact_form(this);">
                     <div class="row">
                         <div class="input-field col s12">
                             <input id="name" type="text" name="name">
@@ -31,13 +31,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s12 l6">
-                            <input id="postalcode" type="text" name="postalcode">
-                            <label for="postalcode">Postcode</label>
-                        </div>
-                        <div class="input-field col s12 l6">
-                            <input id="house" type="text" name="house">
-                            <label for="house">Huisnummer</label>
+                        <div class="input-field col s12">
+                            <input id="adress" type="text" name="adress">
+                            <label for="adress">Adres</label>
                         </div>
                     </div>
                     <br />
@@ -48,7 +44,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <button id="appointment-submit" class="btn-large waves-effect waves-light color-primary--background">
+                        <button class="btn-large waves-effect waves-light color-primary--background">
                             Verstuur<i class="material-icons right">send</i>
                         </button>
                     </div>
