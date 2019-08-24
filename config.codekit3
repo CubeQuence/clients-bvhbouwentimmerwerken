@@ -354,15 +354,15 @@
 "projectAttributes": {
 	"creationDate": 559838349.03109396,
 	"displayValue": "BVH-Bouw-en-Timmerwerken",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
 	"lastBuiltDate": 588348138.64623296
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
-	"allowInjectionReloads": 1,
-	"alwaysUseExternalServer": 1,
+	"allowInjectionReloads": 0,
+	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerEnableIEGrid": 0,
