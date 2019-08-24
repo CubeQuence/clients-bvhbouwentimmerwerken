@@ -28,7 +28,7 @@
 
     <!--Import Materialize CSS-->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!--Import Custom CSS-->
     <link rel="stylesheet" href="/css/style.2.css">
@@ -38,7 +38,27 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Analytics -->
-    <script src="https://cdn.lucacastelnuovo.nl/analytics.lucacastelnuovo.nl/js/dynamic/tracking.35.js?site_id=3"></script>
+    <script>
+        var _paq = window._paq || [];
+        _paq.push(['setDownloadClasses', "track-download"]);
+        _paq.push(['setLinkClasses', "track-external"]);
+        _paq.push(['setIgnoreClasses', "track-disabled"]);
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+        (function() {
+          var u = "https://analytics.lucacastelnuovo.nl/";
+          _paq.push(["setTrackerUrl", u + "matomo.php"]);
+          _paq.push(["setSiteId", 3]);
+          var d = document,
+            g = d.createElement("script"),
+            s = d.getElementsByTagName("script")[0];
+          g.type = "text/javascript";
+          g.async = true;
+          g.defer = true;
+          g.src = u + "matomo.js";
+          s.parentNode.insertBefore(g, s);
+        })();
+    </script>
 </head>
 
 <body>
