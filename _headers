@@ -1,24 +1,8 @@
 /*
-  Strict-Transport-Security: max-age=63072000
-  Strict-Transport-Security: includeSubDomains
-  Strict-Transport-Security: preload
+  Strict-Transport-Security: "max-age=63072000; includeSubDomains; preload;"
   
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   X-Permitted-Cross-Domain-Policies: none
   Referrer-Policy: no-referrer
-  
-  Feature-Policy: geolocation 'none'
-  Feature-Policy: midi 'none'
-  Feature-Policy: notifications 'none'
-  Feature-Policy: push 'none'
-  Feature-Policy: sync-xhr 'none'
-  Feature-Policy: microphone 'none'
-  Feature-Policy: camera 'none'
-  Feature-Policy: magnetometer 'none'
-  Feature-Policy: gyroscope 'none'
-  Feature-Policy: speaker 'none'
-  Feature-Policy: vibrate 'none'
-  Feature-Policy: fullscreen 'self'
-  Feature-Policy: payment 'none'
