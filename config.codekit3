@@ -135,21 +135,21 @@
 		"ft": 65536,
 		"oA": 2,
 		"oAP": "/build/functions/send-email/node_modules",
-		"oF": 0
+		"oF": 1
 		},
 	"/functions/send-email/package-lock.json": {
 		"ft": 524288,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "/build/functions/send-email/package-lock.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 0
 		},
 	"/functions/send-email/package.json": {
 		"ft": 524288,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "/build/functions/send-email/package.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 0
 		},
@@ -158,9 +158,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/build/functions/send-email/send-email.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 1
 		},
@@ -169,9 +169,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/build/functions/send-email/validations.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 1
 		},
@@ -398,7 +398,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 595098276.90608394
+	"lastBuiltDate": 595098824.68328094
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

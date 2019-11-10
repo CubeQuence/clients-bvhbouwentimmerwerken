@@ -1,1 +1,35 @@
-"use strict";exports.validateEmail=function(t,n){if("string"!=typeof n&&!(n instanceof String))throw TypeError("".concat(t," must be a string"));if(exports.validateLength(t,n,5,30),!/^[\w.-]+@[\w.-]+\.\w+$/.test(n))throw TypeError("".concat(t," is not an email address"))},exports.validateLength=function(t,n,r,o){var e,a;if(1==(arguments.length<=2?0:arguments.length-2)?(e=0,a=arguments.length<=2?void 0:r):(e=arguments.length<=2?void 0:r,a=arguments.length<=3?void 0:o),"string"!=typeof n&&!(n instanceof String))throw TypeError("".concat(t," must be a string"));if(n.length<e)throw TypeError("".concat(t," must be at least ").concat(e," chars long"));if(n.length>a)throw TypeError("".concat(t," must contain ").concat(a," chars at most"))};
+exports.validateEmail = (ctx, str) => {
+  if (typeof str !== 'string' && !(str instanceof String)) {
+    throw TypeError(`${ctx} must be a string`)
+  }
+
+  exports.validateLength(ctx, str, 5, 30)
+
+  if (!/^[\w.-]+@[\w.-]+\.\w+$/.test(str)) {
+    throw TypeError(`${ctx} is not an email address`)
+  }
+}
+
+exports.validateLength = (ctx, str, ...args) => {
+  let min, max
+
+  if (args.length === 1) {
+    min = 0
+    max = args[0]
+  } else {
+    min = args[0]
+    max = args[1]
+  }
+
+  if (typeof str !== 'string' && !(str instanceof String)) {
+    throw TypeError(`${ctx} must be a string`)
+  }
+
+  if (str.length < min) {
+    throw TypeError(`${ctx} must be at least ${min} chars long`)
+  }
+
+  if (str.length > max) {
+    throw TypeError(`${ctx} must contain ${max} chars at most`)
+  }
+}
