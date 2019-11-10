@@ -67,11 +67,16 @@
         document.querySelector("#captcha_invalid").style.display = "block";
         buttonsState(true, form);
 
-        return false;
+        return;
       }
 
       form.style.display = "none";
-      document.querySelector("#thankyou_message").style.display = "block";
+
+      if (
+        !document.querySelector("#captcha_invalid").style.display === "block"
+      ) {
+        document.querySelector("#thankyou_message").style.display = "block";
+      }
 
       return;
     };
