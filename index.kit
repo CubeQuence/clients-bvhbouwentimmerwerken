@@ -6,57 +6,90 @@
 <!-- @import /includes/navbar-->
 
 <div class="section">
-    <div class="container">
-        <img src="/images/header.jpg" alt="Header || BVH Bouw en Timmerwerken" class="responsive-img">
-    </div>
+  <div class="container">
+    <img
+      src="/images/header.jpg"
+      alt="Header || BVH Bouw en Timmerwerken"
+      class="responsive-img"
+    />
+  </div>
 </div>
 
 <div class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <h2 class="header">Over Ons</h2>
-                <p class="flow-text">BVH Bouw en Timmerwerken is opgericht in 2018. Wij zijn een jong, enorm gemotiveerd bedrijf. Het is onze drijfveer om uw bouwplannen te realiseren! Wij streven naar klanttevredenheid en kwaliteit. Wij denken ook graag met u mee! Alle projecten zijn bespreekbaar! We hechten een groot belang aan goede voorbereiding. U kunt vrijblijvend een <a href="afspraak.html">afspraak maken</a>.</p>
-                <p class="flow-text">Als we uw wensen en de mogelijkheden besproken hebben, krijgt u van ons altijd een passende offerte! Uiteraard zullen we deze offerte mondeling toelichten. </p>
-                <p class="flow-text">BVH Bouw en Timmerwerken kijkt uit naar een prettige samenwerking!</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12">
-                <h4>Gallerij</h4>
-                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://lightwidget.com/widgets/e7da4024af00515a8c2cd401b5a0029c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12">
-                <h4>Contact formulier</h4>
-                <form id="form" action="/mail.php" method="POST" onsubmit="event.preventDefault(); contact_form(this);">
-                    <div class="row">
-                        <div class="input-field col s12 l6">
-                            <input id="name" type="text" name="name">
-                            <label for="name">Naam</label>
-                        </div>
-                        <div class="input-field col s12 l6">
-                            <input id="email" type="email" name="email">
-                            <label for="email">Email</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <textarea id="message" class="materialize-textarea" rows="20" name="message"></textarea>
-                            <label for="message">Bericht</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <button class="btn waves-effect waves-light color-primary--background">
-                            Verstuur<i class="material-icons right">send</i>
-                        </button>
-                    </div>
-                    </form>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h2 class="header">Over Ons</h2>
+        <p class="flow-text">
+          BVH Bouw en Timmerwerken is opgericht in 2018. Wij zijn een jong,
+          enorm gemotiveerd bedrijf. Het is onze drijfveer om uw bouwplannen te
+          realiseren! Wij streven naar klanttevredenheid en kwaliteit. Wij
+          denken ook graag met u mee! Alle projecten zijn bespreekbaar! We
+          hechten een groot belang aan goede voorbereiding. U kunt vrijblijvend
+          een
+          <a href="afspraak.html">afspraak maken</a>.
+        </p>
+        <p class="flow-text">
+          Als we uw wensen en de mogelijkheden besproken hebben, krijgt u van
+          ons altijd een passende offerte! Uiteraard zullen we deze offerte
+          mondeling toelichten.
+        </p>
+        <p class="flow-text">
+          BVH Bouw en Timmerwerken kijkt uit naar een prettige samenwerking!
+        </p>
+      </div>
     </div>
+    <div class="row">
+      <div class="col s12">
+        <h4>Gallerij</h4>
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+        <iframe
+          src="https://lightwidget.com/widgets/e7da4024af00515a8c2cd401b5a0029c.html"
+          scrolling="no"
+          allowtransparency="true"
+          class="lightwidget-widget"
+          style="width:100%;border:0;overflow:hidden;"
+        ></iframe>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <h4>Contact formulier</h4>
+        <form action="/.netlify/functions/send-email">
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <input id="name" type="text" name="name" required />
+              <label for="name">Naam</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <input id="email" type="email" name="email" required />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea
+                id="message"
+                class="materialize-textarea"
+                name="message"
+                required
+              ></textarea>
+              <label for="message">Bericht</label>
+            </div>
+          </div>
+          <div class="row">
+            <button
+              class="g-recaptcha btn waves-effect waves-light color-primary--background"
+              data-sitekey="6Leo8cEUAAAAAFavXd97DyOwsObSBOa8vS9Lw-Q5"
+              data-callback="handleFormSubmit"
+            >
+              Verstuur<i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
-
 
 <!-- @import /includes/footer -->

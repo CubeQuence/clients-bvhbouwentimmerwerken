@@ -6,53 +6,70 @@
 <!-- @import /includes/navbar-->
 
 <div class="section">
-    <div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h2 class="header">Afspraak Maken</h2>
+        <p>
+          Vul AUB dit formulier in dan bellen wij u zo snel mogelijk om een
+          afspraak te maken.
+        </p>
         <div class="row">
-            <div class="col s12">
-                <h2 class="header">Afspraak Maken</h2>
-                <p>Vul AUB dit formulier in dan bellen wij u zo snel mogelijk om een afspraak te maken.</p>
-                <form id="form" action="/mail.php" method="POST" onsubmit="event.preventDefault(); contact_form(this);">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="name" type="text" name="name">
-                            <label for="name">Naam</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="email" type="email" name="email">
-                            <label for="email">Email</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="phone" type="tel" name="phone">
-                            <label for="phone">Telefoon</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="adress" type="text" name="adress">
-                            <label for="adress">Adres</label>
-                        </div>
-                    </div>
-                    <br />
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <textarea id="problem" class="materialize-textarea" name="description"></textarea>
-                            <label for="problem">Omschrijving</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <button class="btn-large waves-effect waves-light color-primary--background">
-                            Verstuur<i class="material-icons right">send</i>
-                        </button>
-                    </div>
-                </form>
-            </div>
+          <div id="thankyou_message" style="display:none;" class="col s12">
+            <h6 class="btn-small disabled">
+              Uw bericht is verstuurd!
+            </h6>
+          </div>
+          <div id="email_invalid" style="display:none;" class="col s12">
+            <h6 class="btn-small disabled">
+              Ongeldig email adres!
+            </h6>
+          </div>
+          <div id="captcha_invalid" style="display:none;" class="col s12">
+            <h6 class="btn-small disabled">
+              Probeer AUB opnieuw!
+            </h6>
+          </div>
         </div>
+        <form action="/.netlify/functions/send-email">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="name" type="text" name="name" required />
+              <label for="name">Naam</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" name="email" required />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="phone" type="tel" name="phone" required />
+              <label for="phone">Telefoon</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="adres" type="text" name="postalcode" required />
+              <label for="adres">Postcode</label>
+            </div>
+          </div>
+          <div class="row">
+            <button
+              class="g-recaptcha btn-large waves-effect waves-light color-primary--background"
+              data-sitekey="6Leo8cEUAAAAAFavXd97DyOwsObSBOa8vS9Lw-Q5"
+              data-callback="handleFormSubmit"
+            >
+              Verstuur<i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
 
-
+<!-- @import /includes/captcha -->
 <!-- @import /includes/footer -->

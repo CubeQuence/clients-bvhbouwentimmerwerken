@@ -1,0 +1,86 @@
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+  function validEmail(email) {
+    const re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return re.test(email);
+  }
+  function buttonsState(active, form) {
+    const buttons = form.querySelectorAll("button");
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].disabled = !active;
+    }
+  }
+
+  function getFormData(form) {
+    const elements = form.elements;
+    const fields = Object.keys(elements)
+      .map(function(k) {
+        if (elements[k].name !== undefined) {
+          return elements[k].name;
+        } else if (elements[k].length > 0) {
+          return elements[k].item(0).name;
+        }
+      })
+      .filter(function(item, pos, self) {
+        return self.indexOf(item) == pos && item;
+      });
+
+    const formData = {};
+    fields.forEach(function(name) {
+      const element = elements[name];
+      formData[name] = element.value;
+
+      if (element.length) {
+        const data = [];
+        for (const i = 0; i < element.length; i++) {
+          const item = element.item(i);
+          if (item.checked || item.selected) {
+            data.push(item.value);
+          }
+        }
+        formData[name] = data.join(", ");
+      }
+    });
+
+    return formData;
+  }
+
+  function handleFormSubmit() {
+    const form = document.querySelector("form");
+    const data = getFormData(form);
+
+    if (!validEmail(data.email)) {
+      document.querySelector("#email_invalid").style.display = "block";
+      return false;
+    }
+
+    document.querySelector("#email_invalid").style.display = "none";
+
+    buttonsState(false, form);
+    const xhr = new XMLHttpRequest();
+
+    xhr.open("POST", form.action);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== 4) {
+        document.querySelector("#captcha_invalid").style.display = "block";
+        buttonsState(true, form);
+
+        return false;
+      }
+
+      form.style.display = "none";
+      document.querySelector("#thankyou_message").style.display = "block";
+
+      return;
+    };
+
+    const encoded = Object.keys(data)
+      .map(function(k) {
+        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+      })
+      .join("&");
+    xhr.send(encoded);
+  }
+</script>

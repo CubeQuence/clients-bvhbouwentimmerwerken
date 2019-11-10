@@ -6,13 +6,12 @@
 //Lettertype
 @font-face {
     font-family: 'BankGothic';
-    src:
-        url('bankgothic.woff') format('woff'),
-        url('bankgothic.ttf')  format('truetype');
+    src: url('bankgothic.woff') format('woff'),
+        url('bankgothic.ttf') format('truetype');
 }
 
 html {
-    font-family: BankGothic, Arial,helvetica,sans-serif !important;
+    font-family: BankGothic, Arial, helvetica, sans-serif !important;
 }
 
 //CSS for logo
@@ -33,4 +32,15 @@ html {
 //hide honeypot form
 #honeypot {
     display: none;
+}
+
+//Sticky footer
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
