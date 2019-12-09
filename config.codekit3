@@ -25,12 +25,6 @@
 		"oAP": "/build/afspraak.html",
 		"oF": 0
 		},
-	"/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/build",
-		"oF": 0
-		},
 	"/css/_colors.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -130,50 +124,6 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 90
-		},
-	"/functions/send-email/node_modules": {
-		"ft": 65536,
-		"oA": 2,
-		"oAP": "/build/functions/send-email/node_modules",
-		"oF": 1
-		},
-	"/functions/send-email/package-lock.json": {
-		"ft": 524288,
-		"oA": 2,
-		"oAP": "/build/functions/send-email/package-lock.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 0
-		},
-	"/functions/send-email/package.json": {
-		"ft": 524288,
-		"oA": 2,
-		"oAP": "/build/functions/send-email/package.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 0
-		},
-	"/functions/send-email/send-email.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 2,
-		"oAP": "/build/functions/send-email/send-email.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 1
-		},
-	"/functions/send-email/validations.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 2,
-		"oAP": "/build/functions/send-email/validations.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 1
 		},
 	"/images/facebook.png": {
 		"ft": 32768,
@@ -344,20 +294,6 @@
 		"oO": 0,
 		"oS": 0
 		},
-	"/netlify.toml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/build/netlify.toml",
-		"oF": 0
-		},
-	"/node_modules": {
-		"ft": 65536,
-		"oA": 2,
-		"oAP": "/build/node_modules",
-		"oF": 0
-		},
 	"/onderhoud-renovatie.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -365,22 +301,6 @@
 		"oA": 0,
 		"oAP": "/build/onderhoud-renovatie.html",
 		"oF": 0
-		},
-	"/package-lock.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/build/package-lock.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 0
-		},
-	"/package.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/build/package.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 0
 		},
 	"/README.md": {
 		"cB": 0,
@@ -420,7 +340,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 595098824.68328094
+	"lastBuiltDate": 597603186.803635
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
