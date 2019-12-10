@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/.prettierrc": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/.prettierrc",
+		"oF": 0
+		},
 	"/_headers": {
 		"cB": 0,
 		"ft": 8192,
@@ -252,20 +260,20 @@
 		"opt": 1,
 		"q": 90
 		},
-	"/includes/_captcha.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 1,
-		"oA": 1,
-		"oAP": "/build/includes/_captcha.html",
-		"oF": 0
-		},
 	"/includes/_footer.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 1,
 		"oA": 1,
 		"oAP": "/build/includes/_footer.html",
+		"oF": 0
+		},
+	"/includes/_form.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 1,
+		"oA": 1,
+		"oAP": "/build/includes/_form.html",
 		"oF": 0
 		},
 	"/includes/_header.kit": {
@@ -346,7 +354,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_green",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 597603186.803635
+	"lastBuiltDate": 597689254.45196199
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
